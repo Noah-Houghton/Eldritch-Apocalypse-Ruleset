@@ -1,0 +1,5 @@
+\usepackage{array,etoolbox}
+% \preto\tabular{\setcounter{magicrownumbers}{0}}
+\newcommand{\resettablecounter}{\setcounter{magicrownumbers}{0}}
+\newcounter{magicrownumbers}
+\newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}

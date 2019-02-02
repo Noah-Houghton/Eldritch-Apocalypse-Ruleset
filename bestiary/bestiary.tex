@@ -1,0 +1,102 @@
+\documentclass[./main.tex]{subfiles}
+
+\begin{document}
+
+\chapter{People}
+
+\chapter{Wild Things}
+
+\chapter{Eldritch Gods}
+
+% if you wish to reference this creature in another file, use the following command
+% \hyperref[monster:name]{reference}
+
+\chapter{Eldritch Creatures}
+% You can optionally not include the background by saying
+% begin{monsterboxnobg}
+\begin{monsterbox}{Monster Foo}\label{monster:foo}
+  \begin{hangingpar}
+    \textit{Small metasyntactic variable (goblinoid), neutral evil}
+  \end{hangingpar}
+	\dndline%
+	\basics[%
+	armorclass = 12,
+	hitpoints  = \dice{3d8 + 3},
+	speed      = 50 ft
+	]
+	\dndline%
+	\stats[
+    STR = \stat{12}, % This stat command will autocomplete the modifier for you
+    DEX = \stat{7}
+	]
+	\dndline%
+	\details[%
+	% If you want to use commas in these chapters, enclose the
+	% description in braces.
+	% I'm so sorry.
+	languages = {Common Lisp, Erlang}, 
+% 	senses = Darkvision, challenge = 4
+	]
+	\dndline%
+	\begin{monsteraction}[Monster-super-powers]
+		This Monster has some serious superpowers!
+	\end{monsteraction}
+	\monstersection{Actions}
+	\begin{monsteraction}[Generate text]
+		This one can generate tremendous amounts of text! Though only when it wants to.
+	\end{monsteraction}
+
+	\begin{monsteraction}[More actions]
+    See, here he goes again! Yet more text.
+	\end{monsteraction}
+\end{monsterbox}
+
+\begin{monsterbox}{Cave Beast}\label{monster:foo}
+  \begin{hangingpar}
+    \textit{Large cave dweller, neutral evil}
+  \end{hangingpar}
+	\dndline%
+	\basics[%
+	armorclass = 14,
+	hitpoints  = \dice{8d12 + 10},
+	speed      = 30 ft
+	]
+	\dndline%
+	\stats[
+    STR = \stat{18}, % This stat command will autocomplete the modifier for you
+    DEX = \stat{12},
+    INT = \stat{8},
+    CON = \stat{12},
+    WIS = \stat{8},
+    CHA = \stat{2}
+	]
+	\dndline%
+	\details[%
+	% If you want to use commas in these chapters, enclose the
+	% description in braces.
+	languages = {Deep Speech}, 
+ 	senses = Blindsight 30 ft., challenge = 4,
+ 	skills = Perception (+6),
+	]
+	\dndline%
+	\begin{monsteraction}[Cave Sense]
+	    When underground in their natural habitat, cave beasts gain advantage on perception checks.
+	\end{monsteraction}
+	\begin{monsteraction}[Thick Skin]
+	    Due to their adaptation to their home, cave beasts have resistance to cold damage.
+	\end{monsteraction}
+	\begin{monsteraction}[Light Sensitivity]
+	    When subjected to bright light, cave beasts suffer disadvantage on their attack roles. In addition, they are vulnerable to radiant damage.
+	\end{monsteraction}
+	\monstersection{Actions}
+	\begin{monsteraction}[Extinguish Light]
+        Twice per encounter, the cave beast can release a wave of dark energy that extinguishes all non-magical light sources and any magical light sources of level 1 or lower.
+	\end{monsteraction}
+	\begin{monsteraction}[Multi-attack]
+		Each turn, the cave beast can make two claw attacks.
+	\end{monsteraction}
+	\begin{monsteraction}[Claw attack]
+	    The cave beast takes a swipe against an enemy with its long sharp nails (+5 to hit, 2d10 + 6)
+	\end{monsteraction}
+\end{monsterbox}
+\end{document}

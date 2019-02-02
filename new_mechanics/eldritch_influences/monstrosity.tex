@@ -1,0 +1,65 @@
+% change '././main.tex' below to reflect -document's position in folder hierarchy
+\documentclass[./././main.tex]{subfiles}
+ 
+\begin{document}
+
+\section{Monstrosity}
+Monstrosity is a numeric representation of how close to the void any character is. It can be raised or lowered by: certain class-specific actions; spells; drinking Elixirs; taking a Long Rest; and entering or exiting areas of intense Eldritch activity.
+
+Monstrosity (MST) can be thought of as a separate health bar, with the difference being that lower MST is better. MST has two values for the player to manage: the first is a 20-point scale, against which the player must make checks. For example, a player with 10 MST would have a DC 10 saving throw on MST. All normal rules concerning saving throws apply to MST. As the character approaches 20 MST, they become increasingly attuned to their Eldritch heritage, and act accordingly. This rule is left intentionally vague so that individual DMs and players can decide for themselves how they wish to roleplay or integrate MST scaling into gameplay.
+
+When a creature receives Monstrosity damage, the player associated with them rolls a d20. If that number is greater than 10 + 1/2 your current Monstrosity, your Monstrosity value does not change. If it is less than that number, the creature's Monstrosity increases by the amount specified in the attack details. 
+
+The second aspect of Monstrosity tracks a character's long-term relationship with the Void. If the player ever goes above 20 MST, they gain a level in this system. Gaining a prestige level in MST means that the character has gone so far into the void that it is impossible to return to normalcy afterwards. The character manifests a new, permanent Eldritch-influenced feature and they are subsumed into their Eldritch Manifestation for 1d6 days, after which point their MST drops to 0.
+
+For each prestige level up to 3, the player receives a set negative effect, outlined by the 'Prestige Effects' table below.
+
+\header{Prestige Effects}
+\begin{dndtable}[cX]
+\textbf{Level} & \textbf{Effect} \\
+1              & -1 to all Skills \\
+2              & -1 to all Ability Scores \\
+3              & MST damage taken is doubled \\
+4+             & d20 (DC 10) to stay sane \\ 
+\end{dndtable}
+
+When a player gains a prestige level (up to level 3), the DM selects three traits (either randomly or by choice) from the 'Prestige Traits' table below. The player must then select one of them to add to their character. 
+
+A number of the below traits are sourced from official Dungeons \& Dragons materials; others are our own creation.
+
+\header{Prestige Traits}
+\begin{dndlongtable}[ccp{14em}]
+\textbf{d20} & \textbf{Trait} & \textbf{Effect} \\
+\rownumber             & Hard-skinned    & Gain resistance to Bludgeoning and Slashing attacks \\
+\rownumber             & Amphibious    & Breathe, move, and fight underwater as if you were on land \\
+\rownumber             & The Eye         & Gain Blindsight \\
+\rownumber             & Vapor Form       & You can move through a space as narrow as 1 inch wide without squeezing. You move at half your normal speed and cannot attack while in this form \\
+\rownumber             & Seer            & Once every long rest you may peek up to 1 hour into the future \\
+\rownumber             & Vampiric        & During combat, damage dealt heals you for up to 10\% of your max HP every turn\\
+\rownumber             & Killer Instinct & Gain advantage on melee attack rolls against Eldritch enemies \\
+\rownumber             & Ravager         & Your unarmed strike damage becomes (Strength Modifier) d4 \\
+\rownumber             & Heated Skin     & You gain resistance to Cold damage and do not need a fire to stay warm in cold environments \\
+\rownumber             & Shadow Form  & While in dim light or darkness, you may turn Invisible as a bonus action \\
+\rownumber             & Eldritch Nature  & You no longer require air, food, drink, or sleep. For all checks, you count as an Eldritch creature \\
+\rownumber             & Sanguine Thirst  & You gain advantage on melee attack rolls against any Bloodied creature \\
+\rownumber             & Chameleon Skin  & While you remain motionless, you blend into the background. If a creature comes within 10 ft of you, make a Stealth check to stay hidden. \\
+
+\rownumber             & Eldritch Phobia & Rather than making a DC 10 monstrosity check to determine whether you gain a point of monstrosity, you now make a DC 5 check. However, the first time you encounter an eldritch creature after a long rest, you must make a DC 10 wisdom saving throw or become Frightened of that creature for a turn. \\
+\rownumber             & Treasure Sense  & You can pinpoint, by scent, the location of
+precious metals and stones, such as coins and gems, within 60 feet of you.\\
+\rownumber             & Spider Climb    & You can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check. \\
+\rownumber             & Bewitching Eyes & Once per week, you can attempt to charm one sentient creature through supernatural guile. The creature must make a DC 10 + the player's Wisdom bonus Wisdom saving throw or is Charmed until this feature is used again. On a successful save the creature is aware of the attempt and is permanently immune to this effect.\\
+\rownumber             & Inscrutable     & You are immune to any effect that would sense your emotions or read your thoughts, as well as any divination spell targeted within a 30ft area surrounding you unless you choose to allow it. Insight checks made to ascertain your intentions or sincerity have disadvantage. \\
+\rownumber             & Grave Conversationalist & You can perceive and speak with the spirits who linger on the mortal plane. \\
+\rownumber             & Soul Anchor   &  Your soul has become irrevocably tied to an object in your possession at the time of transformation. At will, you can teleport to the location of that object, and upon death you reform beside that object after 1d4 days. However, if the object is destroyed, your character's soul is destroyed irrevocably.\\
+
+
+\end{dndlongtable}
+
+
+
+% \dndfeat[]{Test}{feat test text}
+
+After level 3 Monstrosity, the player receives no new Traits or Effects. Instead, on reaching >20 MST the player rolls a d20. If the number is greater than 10, the player succeeds the check and returns to humanity after 1d6 days. If the number is less than 10, the player fails the check and is permanently rendered their Eldritch Manifestation. This is effectively character death.
+
+\end{document}
